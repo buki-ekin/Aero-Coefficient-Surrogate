@@ -91,6 +91,15 @@ aero-surrogate run \
 Complete NACA profiles are held out during validation. The deployment model is
 then trained separately on all 1,618 rows.
 
+The held-out profiles are NACA 0021, 2418, 2424, 4415, and 4418. Results on
+their 302 flow5 rows are:
+
+| Target | RMSE | MAE | R2 |
+| --- | ---: | ---: | ---: |
+| CL | 0.03457 | 0.02306 | 0.99671 |
+| CD | 0.00132 | 0.00107 | 0.95441 |
+| CM | 0.00696 | 0.00486 | 0.96998 |
+
 The final run folder contains:
 
 ```text

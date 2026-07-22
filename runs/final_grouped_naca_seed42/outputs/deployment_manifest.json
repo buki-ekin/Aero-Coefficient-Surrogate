@@ -1,0 +1,22 @@
+{
+  "dataset_path": "data/processed/flow5_airfoils.csv",
+  "dataset_sha256": "9e6d654172f4b04dddf5753191c201b85efa7398189a5ff6695c8cab85187422",
+  "features": [
+    "camber",
+    "camber_position",
+    "thickness",
+    "alpha_deg",
+    "reynolds"
+  ],
+  "min_samples_leaf": 2,
+  "model_path": "runs/final_grouped_naca_seed42/outputs/deployment_model.pkl",
+  "model_sha256": "5ed0756fba495af694f147c6dc5866e0837d7a0840db561f011c8d77b9c1bd82",
+  "n_estimators": 300,
+  "random_seed": 42,
+  "targets": [
+    "cl",
+    "cd",
+    "cm"
+  ],
+  "training_rows": 1618
+}
