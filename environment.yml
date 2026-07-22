@@ -1,0 +1,10 @@
+name: aerosurrogate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.24
+  - pandas>=2.0
+  - pip
+  - pip:
+      - -e .[dev]

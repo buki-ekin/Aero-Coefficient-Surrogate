@@ -1,0 +1,592 @@
+[
+  {
+    "path": "data/raw/flow5_alpha_sweep/aerosurrogate_flow5_re1000000.xml",
+    "sha256": "7c803e6ed3412d98b7e881f618b3f11db143ffb02c16d1415b36808a5ebbe353",
+    "size_bytes": 3056
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/aerosurrogate_flow5_re2000000.xml",
+    "sha256": "a21a95289d41fd2f542fcf8673c152658f2c20f99e4fa55aadc8a01cfdc303a6",
+    "size_bytes": 3056
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/aerosurrogate_flow5_re500000.xml",
+    "sha256": "082dba2f6d92534efe7965d6e3dfdf83a7da1a94d05edc067e7cd19e7834962b",
+    "size_bytes": 3054
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0006.dat",
+    "sha256": "1886834554c9cf5e5da8b2f9269e4a89ee266cf056d182d2f3d22072d8c2cef4",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0008.dat",
+    "sha256": "60d00eaaff4071bf3af9d64f5d1381e69e7317d16c63447cf3bad645d7375cc2",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0009.dat",
+    "sha256": "494a20c833469d939ad69995f7db3d73e69c2f302a2a9030ed5245d6d36c4c53",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0010.dat",
+    "sha256": "55e6dcd4a4b68770f21d754447c467e7ba65c63857bbfe0720c972c58b39f34e",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0012.dat",
+    "sha256": "b3ef42066938e1c4520ea93e74e87a39973a5507822912cdfcbf0f88687bbfbb",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0015.dat",
+    "sha256": "d320bda1b34a1b65821a75dffaed40e31ab886921a6d6a6e2de2893f9472e2a8",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0018.dat",
+    "sha256": "2b1796eec4f76b7b2f6940ed4951819f56937caee232af74ecf48e98ff582822",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0021.dat",
+    "sha256": "e76b2c1ce49f7654c8611961dd25ff36a2ee696953676144da0aeb3fbfade0cb",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_0024.dat",
+    "sha256": "1f34908e8702ec27e395eec194829d7434276021edb43302f61de94d45b57acd",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_1408.dat",
+    "sha256": "ab31d6f64ba5f35aef5e50c68a0ffb95f246813fdcb5f275923716f1ce9ed061",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_1410.dat",
+    "sha256": "b36734570f847badd40d70f4773752f8e321d942df69b374085f3f13b209b89f",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_1412.dat",
+    "sha256": "7fd812136398efbbca912c1a31646663874aab8a30f7423b2058a3bbf6ad60ff",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2408.dat",
+    "sha256": "1d188146a18e495fbe12b8e4cefb6365d438e6341efebd146e9d825201697e35",
+    "size_bytes": 5387
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2410.dat",
+    "sha256": "f611b23d77a143b1ee7cc427897b61ec74ffac2688d9e487e037b628e405876c",
+    "size_bytes": 5388
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2412.dat",
+    "sha256": "9d7521d784b4c1dd8aef2cf1e737648b0918f18e9f226036b02f5f13d2d3d6bd",
+    "size_bytes": 5388
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2414.dat",
+    "sha256": "e1c0a59169977dc6327933ae36aa22f3ac4ca235287be82d404dfb16cc909b6b",
+    "size_bytes": 5388
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2415.dat",
+    "sha256": "2bdddccbe177345d91826588e2777625d4206dda0628d49da5a48d5503bd07c1",
+    "size_bytes": 5388
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2418.dat",
+    "sha256": "9c5fb84e7535880a6b4c9707691fb95fedba2ab08bf7a5047aad16c8db9ed896",
+    "size_bytes": 5388
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2421.dat",
+    "sha256": "139a928be078696e7914e3355d54a863384000dd40ef55897eadf24039d78e7d",
+    "size_bytes": 5389
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_2424.dat",
+    "sha256": "be92b151b008e6c40bdb9e58b836955fee60c09b9e24aed0297dc4b07647c577",
+    "size_bytes": 5389
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_4412.dat",
+    "sha256": "c934c8b4831e2ae52ab2decf3d3030329bcc36621a622110c29c560ed3a2f75a",
+    "size_bytes": 5389
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_4415.dat",
+    "sha256": "c984101e58de8581a181c0b81262d155bcfd25ca044eb6bf1291fd73893f8a29",
+    "size_bytes": 5390
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_4418.dat",
+    "sha256": "c7adae7e97d92880c99e1d2fa80afbc204751475ab04e56645df2eeac2e3d217",
+    "size_bytes": 5390
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_4421.dat",
+    "sha256": "5d92550cc4c3e41b8326fe671557aa2a70300e4473cb2ee232dc244d16e2948d",
+    "size_bytes": 5391
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_4424.dat",
+    "sha256": "cd681b00dcb02d4dbd0ff1237e2a89b96fdad935245a13ff1bbd5aa26edb826d",
+    "size_bytes": 5392
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_6409.dat",
+    "sha256": "cffb452426394565717ebb76cecdde4cd89d50f90e61066cf18cdebe6143e98d",
+    "size_bytes": 5310
+  },
+  {
+    "path": "data/raw/flow5_alpha_sweep/foils/NACA_6412.dat",
+    "sha256": "3eab9cefa45421e256642fcd61c9afbed4e7d87dbfe996ccc98702a13a412e22",
+    "size_bytes": 5330
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0006/T1-Re1.000-N9.0.txt",
+    "sha256": "4b77935a449b7406207a76059783d66df147c56b0660f3e8985a556858ac0a6d",
+    "size_bytes": 1571
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0008/T1-Re1.000-N9.0.txt",
+    "sha256": "17f7d4ef4e44595cf84467172a3f24b11c1af1d15f7ace2004607798afb0b547",
+    "size_bytes": 2113
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0009/T1-Re1.000-N9.0.txt",
+    "sha256": "7b62ed5ae2f2a7d1a77444575707cdd2efcd5740d7cd55b30587be88224a9c7a",
+    "size_bytes": 2114
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0010/T1-Re1.000-N9.0.txt",
+    "sha256": "516406b86519acb9f1f3a706460e398432f95763bc55d91869254f7c3bec2b5b",
+    "size_bytes": 2293
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0012/T1-Re1.000-N9.0.txt",
+    "sha256": "ac5100a6a0c8aba41d9d5c3e3e1bf051a189323bba3ff2dfb812052042440d7f",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0015/T1-Re1.000-N9.0.txt",
+    "sha256": "9b59f654ab7c47d5f3b6a92245e07adfb1cc197dd99e3a8b9494eaf07f565e9b",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0018/T1-Re1.000-N9.0.txt",
+    "sha256": "cd006c05f7813217d03a4a81655985d0b0bb38ad61259d63bafbd5e6b572d8fa",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0021/T1-Re1.000-N9.0.txt",
+    "sha256": "c5cf1c9cdad653244696ee802d584a79335e7b5cbc1346b9060dab79e590882e",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 0024/T1-Re1.000-N9.0.txt",
+    "sha256": "217f8d2eb59e50d63748474c5b4f55df2dabbf382da88b2240d65ade54b6256e",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 1408/T1-Re1.000-N9.0.txt",
+    "sha256": "ec17df5eb0e96d29179d05cc47abeeb60a85afd17bed122927ddfe68d9096230",
+    "size_bytes": 2295
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 1410/T1-Re1.000-N9.0.txt",
+    "sha256": "2cc59c6615736c132759ea8aba2e9efc1dac5d6be84a923b9a2fcd74083868e2",
+    "size_bytes": 2112
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 1412/T1-Re1.000-N9.0.txt",
+    "sha256": "e0e624bc556f6775f5669e07decbd0ee06722a5f051aba38219c3b21c02efb73",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2408/T1-Re1.000-N9.0.txt",
+    "sha256": "55aaaa46d14adbad1209e78f6a11b152c2300d8a86fee2fe0b541cf428f1b8da",
+    "size_bytes": 2294
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2410/T1-Re1.000-N9.0.txt",
+    "sha256": "53502daebfed0fca9bb6816e6fb340e03a612e4ef040e762f9ffbbd7f6d792ac",
+    "size_bytes": 2202
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2412/T1-Re1.000-N9.0.txt",
+    "sha256": "34a304c9f1b07d02ec6b6e01c0737d90d70cb13d8a40ac3521d2b0b71076ec4f",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2414/T1-Re1.000-N9.0.txt",
+    "sha256": "099c3aea1a71afebff1de43029737344691360f635928eeda4e15a7438c5c1d8",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2415/T1-Re1.000-N9.0.txt",
+    "sha256": "b7c8af395891beea2ae028c7bce52a2c8babf61f8b44ec72ad333c1748d3a12b",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2418/T1-Re1.000-N9.0.txt",
+    "sha256": "cabc3e0b247b196efca49ebe1d96baa39c4b6e2f208e23b9a4aed28be6aa6881",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2421/T1-Re1.000-N9.0.txt",
+    "sha256": "772ed676a880ed507eab7a4b0f7f353025f1ad090ee46229ad6a985cba15e536",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 2424/T1-Re1.000-N9.0.txt",
+    "sha256": "a79cb498a03fb6f40fff59ce2e0c2ab46f75e8b19b9e0b1d4bee5ad336ffcf45",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 4412/T1-Re1.000-N9.0.txt",
+    "sha256": "4e2061c1d71680bd0ca6ce0a2a75bbed97d19e976892f16d19fef362c88777d6",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 4415/T1-Re1.000-N9.0.txt",
+    "sha256": "0673e1eb4a4d8e87d99b96b3142be60dc7f751b91c5dd15793aae2756992459b",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 4418/T1-Re1.000-N9.0.txt",
+    "sha256": "c4d04ceef48228f649647cbd438ea14d7ce947b79f15fb310c97e452707c6e07",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 4421/T1-Re1.000-N9.0.txt",
+    "sha256": "cb1eb3f1d9a5fbbfd6aea8da1867f1bad516c94ab0ab7b0a6726a18517dc7504",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 4424/T1-Re1.000-N9.0.txt",
+    "sha256": "a749001b457a2f8ec421cf0483122528b70de29c5c15fcda7d745beae0b7dda1",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 6409/T1-Re1.000-N9.0.txt",
+    "sha256": "19495b4d4663104610a985f508b6a00aa2fe2be5dc14b5b4160be039fd7f9287",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/Foil_polars/NACA 6412/T1-Re1.000-N9.0.txt",
+    "sha256": "81443056ef775303c85e6b8b9e9cd79f5e3886c78817cc00c5a60112e746cc94",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/aerosurrogate_flow5_re1000000.fl5",
+    "sha256": "13e95c0fa8561c67437fd704370363f7972d845ffb6fe798f0dd696edbc6ccac",
+    "size_bytes": 182799
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re1000000/aerosurrogate_flow5_re1000000.log",
+    "sha256": "63324ca531f7f41d7452dd80b56687169a4fc3ceedae8a3e35520c97e4306494",
+    "size_bytes": 5326
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0006/T1-Re2.000-N9.0.txt",
+    "sha256": "191bc792292c32586a12c4a5f840bd7bb698b0ad3dab7e984ae29a1ddb68843b",
+    "size_bytes": 1753
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0008/T1-Re2.000-N9.0.txt",
+    "sha256": "4a5494ed59ad4be9ac6eb1c40f78130a7f78ef9951df3643d8dc7853a2e5600d",
+    "size_bytes": 2296
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0009/T1-Re2.000-N9.0.txt",
+    "sha256": "867ff17a5129d43ba026eafec9b495cf3ec21ab2f50f95afce752310fed9a041",
+    "size_bytes": 2295
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0010/T1-Re2.000-N9.0.txt",
+    "sha256": "5922a763e5eaf59ecfa56bf11cd06ae994b1cf3dc4ad989cf4678f5097834cad",
+    "size_bytes": 2293
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0012/T1-Re2.000-N9.0.txt",
+    "sha256": "798d96ae2b6659185afe87d9d2b633179a64fd53a459737e64f76a73cbdbf9f0",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0015/T1-Re2.000-N9.0.txt",
+    "sha256": "c40c0b6b1062306346947fc2666b80c5221d3770893d5872c55a53ac1ace201e",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0018/T1-Re2.000-N9.0.txt",
+    "sha256": "df99151968ab5db09b447ca21c7d3c3610de83cedc30fe96fa2b632165f83788",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0021/T1-Re2.000-N9.0.txt",
+    "sha256": "59ff332cabd969bad64bbb399bc4bd8c0bb890e27eddac7a94fda908a18712cd",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 0024/T1-Re2.000-N9.0.txt",
+    "sha256": "df0e626e0804825a0edc7088b68b5a7ef37e6db30029245bf66dd9d085bcdc78",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 1408/T1-Re2.000-N9.0.txt",
+    "sha256": "95a78f99597822bf237a79322ffcb42a71b44d71b4deaa7e95d4429f7549e767",
+    "size_bytes": 2205
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 1410/T1-Re2.000-N9.0.txt",
+    "sha256": "53b216e70db9183efcf6252358e8682615ab5022010ea761c52285d3eba3e5c9",
+    "size_bytes": 2293
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 1412/T1-Re2.000-N9.0.txt",
+    "sha256": "0f3e4412dc64a4f0e77eab430235d8c53324fd01a74e8b2f2dd0b2158c3ee3a3",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2408/T1-Re2.000-N9.0.txt",
+    "sha256": "6cf5ac3aba2b58800e7ecc72c7e257927463b94805ccb0797cad0317037993c1",
+    "size_bytes": 2295
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2410/T1-Re2.000-N9.0.txt",
+    "sha256": "41a81d37a3039085d28d00bc1893eb31722b998635178eadff68722adae43b84",
+    "size_bytes": 2203
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2412/T1-Re2.000-N9.0.txt",
+    "sha256": "feb2609600a1a5c72ba4a8a0e83a216e0c3eec2303f3a125355781aa99392347",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2414/T1-Re2.000-N9.0.txt",
+    "sha256": "b54e8eede2e99e697ccc93016e7c5bfa299ebdc046445d52c12f1cff10e98766",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2415/T1-Re2.000-N9.0.txt",
+    "sha256": "b3bffae5dd4821147580a50f51969552e7dff479b7ccab48bdb576897069f727",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2418/T1-Re2.000-N9.0.txt",
+    "sha256": "dd35ca60638fdaa3049d457d892d49e934c5c5ebb3a91478ddc999239d9b924d",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2421/T1-Re2.000-N9.0.txt",
+    "sha256": "825fd429c2709ae6522badc9a6c2547b5b5503778cdc6d92ddf54b205005c69d",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 2424/T1-Re2.000-N9.0.txt",
+    "sha256": "cedba726d6a1e7b058b183e9e8e40c729286f1716e6e2d1b6275eec859db3dcc",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 4412/T1-Re2.000-N9.0.txt",
+    "sha256": "94755ab34e49294f018ddb4657b1b5f8791099c3dba571ec5fdf16d5a19350bb",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 4415/T1-Re2.000-N9.0.txt",
+    "sha256": "9fe56222977249053f81fa254b90afc015a11f55b339001b4cc05f915f644941",
+    "size_bytes": 2021
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 4418/T1-Re2.000-N9.0.txt",
+    "sha256": "bd26c222b57e7cc66da934a8eec1b9050abb362957484ce05ca51484a2baf58d",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 4421/T1-Re2.000-N9.0.txt",
+    "sha256": "2d24e13ad82da96ec8eeff1ba08600cb9dea3eb33321447d9cad92e756ca96bf",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 4424/T1-Re2.000-N9.0.txt",
+    "sha256": "185472c24f189f0add3a5a6aa362bec5b1103295e1d45b1abe9eeee263ee9193",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 6409/T1-Re2.000-N9.0.txt",
+    "sha256": "8b36be0657a46ed57b7976a692d83976c3f3ff7ac540f7e32442d62b518cca49",
+    "size_bytes": 2202
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/Foil_polars/NACA 6412/T1-Re2.000-N9.0.txt",
+    "sha256": "eddba6134b57147fe4a39d12c45e23ab58460f2fcbf4a0d9cc1ecbc271c496da",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/aerosurrogate_flow5_re2000000.fl5",
+    "sha256": "dfe2095252aefdba938cbdbbf6ebb85ca6e70d2682316e0d339ba54dd79c2cfe",
+    "size_bytes": 183183
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re2000000/aerosurrogate_flow5_re2000000.log",
+    "sha256": "90b440337de011d79ecc38f53acdf4bd303707f28264a4ac8c5e9ef90c277df2",
+    "size_bytes": 5326
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0006/T1-Re0.500-N9.0.txt",
+    "sha256": "d2e4a7accfbe40a0a384d34e917e4c0d7437b1297f4dfb7bf459d089262bf9fe",
+    "size_bytes": 1571
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0008/T1-Re0.500-N9.0.txt",
+    "sha256": "75a5ea7dac152c6532564aaf1cb024582e215ba19722a448c63c98e062c7c5aa",
+    "size_bytes": 1841
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0009/T1-Re0.500-N9.0.txt",
+    "sha256": "2f997dde5f424ba6a2798cd6e02790775c8b4aafe5787fa47169d15be2b24b73",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0010/T1-Re0.500-N9.0.txt",
+    "sha256": "5965d96bfcaab2edced310eaf2ac6c7df3e69037664667f9ce24fed2c62f196d",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0012/T1-Re0.500-N9.0.txt",
+    "sha256": "b20bf5caccdcc37e96f62f23ddd497f2774ba380f7d53eef02f97dd9c5c5d6e7",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0015/T1-Re0.500-N9.0.txt",
+    "sha256": "c7bf5f24b80d0416e8c6ccd823ce96e23901747d82ab16cba703cec726b14d78",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0018/T1-Re0.500-N9.0.txt",
+    "sha256": "69f63a213c2da0bf391406404af0b0a2357ee77708ba5464a17655c67a4c0017",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0021/T1-Re0.500-N9.0.txt",
+    "sha256": "7d05e43709bb5a7b29088abc9aee74a7ad5796eeac7abad543791f4f0ace7224",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 0024/T1-Re0.500-N9.0.txt",
+    "sha256": "d027fd43de2d1c65c124e89e500d54db5693db06654953b31ad2d2135321e79b",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 1408/T1-Re0.500-N9.0.txt",
+    "sha256": "a00779546f89ea1c896024e7bcd2f7ca6bb75dff260bfb519a5d8a5091b6f11a",
+    "size_bytes": 2021
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 1410/T1-Re0.500-N9.0.txt",
+    "sha256": "86a57bd2b904adec9b2625f716d8f6cbe6cd605833377d145a00ccdb65f93673",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 1412/T1-Re0.500-N9.0.txt",
+    "sha256": "ecebb983a7a2db0d9ce191ebe6fec62354f861d223bfbd3792d2a80995e4d64f",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2408/T1-Re0.500-N9.0.txt",
+    "sha256": "81e86e9fb5ab6a2aa1ad0f8e2659ff3a0ba91bcae8ef0ad23a5616c7bf8b149b",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2410/T1-Re0.500-N9.0.txt",
+    "sha256": "3491a21516a96f8d76f1a78d6f71cba840a784026a6f56a089054aad63c9ebae",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2412/T1-Re0.500-N9.0.txt",
+    "sha256": "b4caca96d0f7f94d14f8bf4c544db0009ee7058e24a6385f8c87f0bc6c5430b3",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2414/T1-Re0.500-N9.0.txt",
+    "sha256": "2a740d28aa3c78189e3de8dd6324beb4af205ca29aa3b1b05fadfb37aaf1359e",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2415/T1-Re0.500-N9.0.txt",
+    "sha256": "4b64d431f72611c30783a3edb31c1044838b97bc838f465dccaa3c6cf3a9c187",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2418/T1-Re0.500-N9.0.txt",
+    "sha256": "dd7f04c70c44a43b9317129d13a796db3f4d73846dd35a971e63e27e7db49f6e",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2421/T1-Re0.500-N9.0.txt",
+    "sha256": "6e81d5d05553f09a4b3e2eccf6d9e929e5758e387e79fcd4ad5732997a87c710",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 2424/T1-Re0.500-N9.0.txt",
+    "sha256": "4d320b36d86ceea903a173caa0a05cefc39bb6b9f90d49dfb7b835d4f216ca53",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 4412/T1-Re0.500-N9.0.txt",
+    "sha256": "a5490ed136bace457cbe1d3af087acb77582465fc0cfa02e073a0c522269b39a",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 4415/T1-Re0.500-N9.0.txt",
+    "sha256": "0c6432ec4b481f626d17043d092b7dee8d86c0aff0b138c9f70dceb8d4f524c3",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 4418/T1-Re0.500-N9.0.txt",
+    "sha256": "0a9bf095a2e6c831c11bad7578b4b66a0407c7f4b887e0a055db1a059f967a67",
+    "size_bytes": 2111
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 4421/T1-Re0.500-N9.0.txt",
+    "sha256": "8c4ee4782733e2205d7c8558e3c4d1f45cee75520ff6638b86ef831401eb1c03",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 4424/T1-Re0.500-N9.0.txt",
+    "sha256": "fcb3b2b0c96f98c454d44d881993bc6c13bc3b2a6bae83638e7aefcb2119477f",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 6409/T1-Re0.500-N9.0.txt",
+    "sha256": "dd9ef3e29eec2bd412b8e41265e6b93b7de4750336ad3929dcc47189b0e2a300",
+    "size_bytes": 2201
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/Foil_polars/NACA 6412/T1-Re0.500-N9.0.txt",
+    "sha256": "a88108d18f814494086ddc9a9cb82e84225c055ae3a0dce5621f4f5e2d102a53",
+    "size_bytes": 2291
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/aerosurrogate_flow5_re500000.fl5",
+    "sha256": "476009c0bc0b17d86176f1936a9a8ac7a74d37628c43cd6466ee8ea819474736",
+    "size_bytes": 182543
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/aerosurrogate_flow5_re500000/aerosurrogate_flow5_re500000.log",
+    "sha256": "3f0650dc007d2fcd29ce18adb8279681be79d0ea152f782ef4fe0ebbadab3dc4",
+    "size_bytes": 5326
+  },
+  {
+    "path": "data/raw/flow5_exports_multi_re/metadata.csv",
+    "sha256": "5a75c3f73859c34a6b71a8bed37224dd9e9d308c39bcd2c5db9346c921161282",
+    "size_bytes": 7579
+  }
+]

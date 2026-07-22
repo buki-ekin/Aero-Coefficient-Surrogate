@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use AeroSurrogate, please cite this project."
+title: "AeroSurrogate: A Reproducible Airfoil Surrogate Modelling Workflow"
+version: 1.0.0
+date-released: 2026-07-22
+authors:
+  - family-names: "Ekin"
+    given-names: "Buket"
+license: MIT
+abstract: "AeroSurrogate is a small sustainable computational engineering project for reproducible surrogate modelling of NACA-style airfoil coefficients."

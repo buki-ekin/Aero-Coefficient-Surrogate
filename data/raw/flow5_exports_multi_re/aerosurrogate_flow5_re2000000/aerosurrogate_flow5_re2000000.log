@@ -1,0 +1,180 @@
+
+flow5 v7.57
+21.07.2026  17:51:08
+Reading foil .dat files
+      done re-panelling foil: NACA 0006
+   added foil: NACA 0006
+      done re-panelling foil: NACA 0008
+   added foil: NACA 0008
+      done re-panelling foil: NACA 0009
+   added foil: NACA 0009
+      done re-panelling foil: NACA 0010
+   added foil: NACA 0010
+      done re-panelling foil: NACA 0012
+   added foil: NACA 0012
+      done re-panelling foil: NACA 0015
+   added foil: NACA 0015
+      done re-panelling foil: NACA 0018
+   added foil: NACA 0018
+      done re-panelling foil: NACA 0021
+   added foil: NACA 0021
+      done re-panelling foil: NACA 0024
+   added foil: NACA 0024
+      done re-panelling foil: NACA 1408
+   added foil: NACA 1408
+      done re-panelling foil: NACA 1410
+   added foil: NACA 1410
+      done re-panelling foil: NACA 1412
+   added foil: NACA 1412
+      done re-panelling foil: NACA 2408
+   added foil: NACA 2408
+      done re-panelling foil: NACA 2410
+   added foil: NACA 2410
+      done re-panelling foil: NACA 2412
+   added foil: NACA 2412
+      done re-panelling foil: NACA 2414
+   added foil: NACA 2414
+      done re-panelling foil: NACA 2415
+   added foil: NACA 2415
+      done re-panelling foil: NACA 2418
+   added foil: NACA 2418
+      done re-panelling foil: NACA 2421
+   added foil: NACA 2421
+      done re-panelling foil: NACA 2424
+   added foil: NACA 2424
+      done re-panelling foil: NACA 4412
+   added foil: NACA 4412
+      done re-panelling foil: NACA 4415
+   added foil: NACA 4415
+      done re-panelling foil: NACA 4418
+   added foil: NACA 4418
+      done re-panelling foil: NACA 4421
+   added foil: NACA 4421
+      done re-panelling foil: NACA 4424
+   added foil: NACA 4424
+      done re-panelling foil: NACA 6409
+   added foil: NACA 6409
+      done re-panelling foil: NACA 6412
+   added foil: NACA 6412
+
+Making foil analysis list
+   added analysis task for  (NACA 0006, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0008, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0009, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0010, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0012, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0015, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0018, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0021, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 0024, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 1408, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 1410, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 1412, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2408, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2410, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2412, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2414, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2415, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2418, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2421, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 2424, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 4412, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 4415, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 4418, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 4421, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 4424, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 6409, T1-Re2.000-N9.0)
+   added analysis task for  (NACA 6412, T1-Re2.000-N9.0)
+
+
+_____Starting foil analysis_____
+
+Running with 4 thread(s)
+
+Found 27 (foil, polar) pairs to analyze.
+
+Starting NACA 0006 / T1-Re2.000-N9.0
+Starting NACA 0008 / T1-Re2.000-N9.0
+Starting NACA 0009 / T1-Re2.000-N9.0
+Starting NACA 0010 / T1-Re2.000-N9.0
+Starting NACA 0012 / T1-Re2.000-N9.0
+Starting NACA 0015 / T1-Re2.000-N9.0
+Starting NACA 0018 / T1-Re2.000-N9.0
+Starting NACA 0021 / T1-Re2.000-N9.0
+Starting NACA 0024 / T1-Re2.000-N9.0
+Starting NACA 1408 / T1-Re2.000-N9.0
+Starting NACA 1410 / T1-Re2.000-N9.0
+Starting NACA 1412 / T1-Re2.000-N9.0
+Starting NACA 2408 / T1-Re2.000-N9.0
+Starting NACA 2410 / T1-Re2.000-N9.0
+Starting NACA 2412 / T1-Re2.000-N9.0
+Starting NACA 2414 / T1-Re2.000-N9.0
+Starting NACA 2415 / T1-Re2.000-N9.0
+Starting NACA 2418 / T1-Re2.000-N9.0
+Starting NACA 2421 / T1-Re2.000-N9.0
+Starting NACA 2424 / T1-Re2.000-N9.0
+Starting NACA 4412 / T1-Re2.000-N9.0
+Starting NACA 4415 / T1-Re2.000-N9.0
+Starting NACA 4418 / T1-Re2.000-N9.0
+Starting NACA 4421 / T1-Re2.000-N9.0
+Starting NACA 4424 / T1-Re2.000-N9.0
+Starting NACA 6409 / T1-Re2.000-N9.0
+Starting NACA 6412 / T1-Re2.000-N9.0
+
+_____Foil analysis completed_____
+
+Available foils:
+   NACA 0006
+   NACA 0008
+   NACA 0009
+   NACA 0010
+   NACA 0012
+   NACA 0015
+   NACA 0018
+   NACA 0021
+   NACA 0024
+   NACA 1408
+   NACA 1410
+   NACA 1412
+   NACA 2408
+   NACA 2410
+   NACA 2412
+   NACA 2414
+   NACA 2415
+   NACA 2418
+   NACA 2421
+   NACA 2424
+   NACA 4412
+   NACA 4415
+   NACA 4418
+   NACA 4421
+   NACA 4424
+   NACA 6409
+   NACA 6412
+
+
+
+-----Starting plane analyses-----
+
+No xml plane files to load
+
+Adding the plane analyses from the xml files
+
+Making the analysis pairs (plane, analysis)
+   Made 0 valid analysis pairs (plane, polar) to run
+
+_____Plane analyses completed_____
+
+
+
+-----Starting boat analyses-----
+
+No xml Boat files to load
+
+Making the analysis pairs (boat, analysis)
+
+Made 0 valid analysis pairs (boat, polar) to run
+
+_____ Boat analyses completed_____
+
+

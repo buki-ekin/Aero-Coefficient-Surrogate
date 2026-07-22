@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+tmp/
+SCE - Lecture Slides /
+output/pdf/
+SCE-Presentation.pptx
+scripts/create_l01_l03_whiteboard_pdf.py
+scripts/create_l05_l11_whiteboard_pdfs.py
