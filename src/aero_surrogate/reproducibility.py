@@ -7,6 +7,7 @@ import json
 import platform
 import subprocess
 import sys
+import tomllib
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from typing import Any
@@ -42,8 +43,9 @@ def input_manifest(paths: list[str | Path]) -> list[dict[str, Any]]:
 def environment_metadata(project_root: str | Path | None = None) -> dict[str, Any]:
     """Collect lightweight environment and version metadata."""
 
-    packages = {}
-    for package in ("aero-surrogate", "numpy", "pandas", "scikit-learn"):
+    root = Path(project_root) if project_root else Path.cwd()
+    packages = {"aero-surrogate": _project_version(root)}
+    for package in ("numpy", "pandas", "scikit-learn"):
         try:
             packages[package] = version(package)
         except PackageNotFoundError:
@@ -56,6 +58,18 @@ def environment_metadata(project_root: str | Path | None = None) -> dict[str, An
         "packages": packages,
         "git_commit": git_commit(project_root),
     }
+
+
+def _project_version(project_root: Path) -> str:
+    pyproject_path = project_root / "pyproject.toml"
+    try:
+        with pyproject_path.open("rb") as file:
+            return str(tomllib.load(file)["project"]["version"])
+    except (OSError, KeyError, tomllib.TOMLDecodeError):
+        try:
+            return version("aero-surrogate")
+        except PackageNotFoundError:
+            return "not-installed"
 
 
 def git_commit(project_root: str | Path | None = None) -> str | None:

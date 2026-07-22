@@ -195,7 +195,7 @@ def _input_files(dataset_path: Path, raw_data_dir: str | None) -> list[Path]:
         files.extend(
             path
             for path in sorted(raw_root.rglob("*"))
-            if path.is_file() and path.name != "raw_manifest.json"
+            if path.is_file() and path.name != ".DS_Store"
         )
     return files
 

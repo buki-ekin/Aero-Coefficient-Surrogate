@@ -39,7 +39,7 @@ def main() -> None:
         help="Run grouped validation and train the final deployment model.",
     )
     run_parser.add_argument("--data", default="data/processed/flow5_airfoils.csv")
-    run_parser.add_argument("--raw-dir", default="data/raw/flow5_exports_multi_re")
+    run_parser.add_argument("--raw-dir", default="data/raw")
     run_parser.add_argument("--run-root", default="runs")
     run_parser.add_argument("--test-fraction", type=float, default=0.2)
     run_parser.add_argument("--seed", type=int, default=42)

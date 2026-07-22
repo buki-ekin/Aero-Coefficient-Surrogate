@@ -83,7 +83,7 @@ aero-surrogate import-flow5 \
 ```bash
 aero-surrogate run \
   --data data/processed/flow5_airfoils.csv \
-  --raw-dir data/raw/flow5_exports_multi_re \
+  --raw-dir data/raw \
   --run-id final_grouped_naca_seed42 \
   --deployment-model models/flow5_random_forest.pkl
 ```
