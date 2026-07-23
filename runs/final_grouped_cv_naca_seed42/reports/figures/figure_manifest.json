@@ -1,0 +1,16 @@
+{
+  "converged_grid_points": 1618,
+  "expected_grid_points": 1701,
+  "figures": {
+    "data_coverage": "runs/final_grouped_cv_naca_seed42/reports/figures/data_coverage.png",
+    "measured_vs_predicted": "runs/final_grouped_cv_naca_seed42/reports/figures/measured_vs_predicted.png",
+    "model_comparison": "runs/final_grouped_cv_naca_seed42/reports/figures/grouped_cv_model_comparison.png",
+    "residuals_vs_alpha": "runs/final_grouped_cv_naca_seed42/reports/figures/residuals_vs_alpha.png",
+    "rmse_by_airfoil": "runs/final_grouped_cv_naca_seed42/reports/figures/rmse_by_airfoil.png"
+  },
+  "missing_grid_points": 83,
+  "source_cross_validation": "runs/final_grouped_cv_naca_seed42/reports/cross_validation.csv",
+  "source_dataset": "data/processed/flow5_airfoils.csv",
+  "source_predictions": "runs/final_grouped_cv_naca_seed42/reports/predictions.csv",
+  "test_rows": 302
+}

@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0 - 2026-07-23
+
+- Added three-times repeated five-fold grouped validation.
+- Added linear-regression and mean baselines on identical folds.
+- Added confidence intervals and five reproducible scientific figures.
+- Added strict dataset integrity checks and prediction-domain warnings.
+- Bundled the deployment model, model-ready dataset, and HTML dashboard.
+- Expanded the suite to 20 tests with 89% measured coverage.
+- Added linting, clean-wheel installation, and multi-version CI.
+- Added environment locking, FAIR documentation, CodeMeta, security guidance,
+  and a Snakemake workflow for the Python stages.
+
 ## 1.0.0 - 2026-07-22
 
 - Added the final 27-airfoil flow5 dataset at three Reynolds numbers.

@@ -25,7 +25,19 @@ flow5 version are documented in the README and XML scripts.
 
 SHA-256 manifests are stored for raw inputs, processed data, and the deployment
 model. Git tracks source and documentation versions. Final releases use a
-version tag.
+version tag. Dataset validation rejects incomplete, non-finite, duplicated, or
+physically implausible model rows before training.
+
+## Backup And Archive
+
+Tracked code, data, documentation, and final artifacts are copied to the public
+GitHub remote. The local repository is the working copy. This provides two
+independent copies for the submitted material, but it is not a long-term
+research archive.
+
+For final publication, version 1.1.0 should be released on GitHub and archived
+in Zenodo. The resulting DOI must then be added to `CITATION.cff`,
+`codemeta.json`, and the README. No DOI is claimed before that deposit exists.
 
 ## Access And Reuse
 
@@ -36,4 +48,13 @@ MIT licensed and citation information is provided in `CITATION.cff`.
 
 The final raw files, processed dataset, reproducible run, model, and dashboard
 are kept together in the release. Temporary render files and interim datasets
-are excluded.
+are excluded. The intended minimum retention period is ten years after project
+completion, subject to the continued availability of the repository or its
+archival deposit.
+
+## Responsibility
+
+The project author is responsible for data integrity, versioning, release
+creation, and responding to reuse questions. flow5 remains responsible for the
+reference aerodynamic calculation; AeroSurrogate records rather than hides
+that dependency.

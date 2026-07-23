@@ -48,3 +48,19 @@ aero-surrogate import-flow5 \
 
 The requested sweep contains 1,701 operating points. flow5 returned 1,618
 converged rows. The missing 83 points are not filled or estimated.
+
+The per-condition coverage heatmap is generated at:
+
+```text
+runs/final_grouped_cv_naca_seed42/reports/figures/data_coverage.png
+```
+
+## Integrity Checks
+
+Before data can be saved or used for training, AeroSurrogate checks:
+
+- required columns
+- finite numeric values
+- non-empty NACA identifiers
+- duplicate NACA/Reynolds/angle operating points
+- broad physical plausibility ranges, including non-negative drag

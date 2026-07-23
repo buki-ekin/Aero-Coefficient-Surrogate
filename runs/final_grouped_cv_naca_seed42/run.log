@@ -1,0 +1,13 @@
+run_id=final_grouped_cv_naca_seed42
+dataset=data/processed/flow5_airfoils.csv
+rows=1618
+split=grouped_by_naca
+train_rows=1316
+test_rows=302
+held_out_airfoils=NACA 0021,NACA 2418,NACA 2424,NACA 4415,NACA 4418
+repeated_grouped_cv=3x5
+cl_test rmse=0.03457310 mae=0.02305918 r2=0.99670738
+cd_test rmse=0.00131882 mae=0.00106574 r2=0.95441012
+cm_test rmse=0.00695956 mae=0.00486216 r2=0.96997949
+status=completed
+runtime_seconds=5.704

@@ -1,0 +1,15 @@
+{
+  "cv_repeats": 3,
+  "cv_splits": 5,
+  "dataset_path": "data/processed/flow5_airfoils.csv",
+  "deployment_model_path": "models/flow5_random_forest.pkl",
+  "generate_figures": true,
+  "min_samples_leaf": 2,
+  "n_estimators": 300,
+  "random_seed": 42,
+  "raw_data_dir": "data/raw",
+  "run_id": "final_grouped_cv_naca_seed42",
+  "run_root": "runs",
+  "split_strategy": "grouped_by_naca",
+  "test_fraction": 0.2
+}

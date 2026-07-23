@@ -1,0 +1,68 @@
+DATASET = "data/processed/flow5_airfoils.csv"
+RAW_DIR = "data/raw"
+METADATA = "data/raw/flow5_exports_multi_re/metadata.csv"
+EXPORT_DIR = "data/raw/flow5_exports_multi_re"
+RUN_ID = "final_grouped_cv_naca_seed42"
+RUN_DIR = f"runs/{RUN_ID}"
+MODEL = "models/flow5_random_forest.pkl"
+DASHBOARD = "output/dashboard/aerosurrogate_dashboard.html"
+
+
+rule all:
+    input:
+        f"{RUN_DIR}/reports/summary.json",
+        f"{RUN_DIR}/reports/model_comparison.json",
+        f"{RUN_DIR}/reports/figures/figure_manifest.json",
+        DASHBOARD,
+
+
+rule import_flow5:
+    input:
+        metadata=METADATA,
+    output:
+        DATASET,
+    shell:
+        """
+        aero-surrogate import-flow5 \
+          --directory {EXPORT_DIR} \
+          --metadata {input.metadata} \
+          --output {output}
+        """
+
+
+rule validate_and_train:
+    input:
+        dataset=DATASET,
+    output:
+        summary=f"{RUN_DIR}/reports/summary.json",
+        comparison=f"{RUN_DIR}/reports/model_comparison.json",
+        figures=f"{RUN_DIR}/reports/figures/figure_manifest.json",
+        model=MODEL,
+    shell:
+        """
+        aero-surrogate run \
+          --data {input.dataset} \
+          --raw-dir {RAW_DIR} \
+          --run-root runs \
+          --run-id {RUN_ID} \
+          --deployment-model {output.model} \
+          --cv-splits 5 \
+          --cv-repeats 3
+        """
+
+
+rule dashboard:
+    input:
+        dataset=DATASET,
+        summary=f"{RUN_DIR}/reports/summary.json",
+        model=MODEL,
+    output:
+        DASHBOARD,
+    shell:
+        """
+        aero-surrogate dashboard \
+          --data {input.dataset} \
+          --run-dir {RUN_DIR} \
+          --model {input.model} \
+          --output {output}
+        """
