@@ -7,7 +7,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 FLOW5_TARGET_COLUMNS = {
     "alpha": "alpha_deg",
     "cl": "cl",

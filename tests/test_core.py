@@ -7,8 +7,8 @@ from tempfile import TemporaryDirectory
 import pandas as pd
 
 from aero_surrogate.api import AeroSurrogate
-from aero_surrogate.data import save_dataset
 from aero_surrogate.dashboard import _serialize_surrogate, export_html_dashboard
+from aero_surrogate.data import save_dataset
 from aero_surrogate.flow5 import naca4_parameters, read_flow5_polar
 from aero_surrogate.metrics import evaluate_predictions, grouped_train_test_split
 from aero_surrogate.sklearn_surrogate import RandomForestSurrogate
@@ -115,6 +115,9 @@ class RandomForestWorkflowTest(unittest.TestCase):
                     run_root=(root / "runs").as_posix(),
                     run_id="test_run",
                     n_estimators=10,
+                    cv_splits=3,
+                    cv_repeats=1,
+                    generate_figures=False,
                 )
             )
             run_dir = result["run_dir"]
@@ -124,6 +127,8 @@ class RandomForestWorkflowTest(unittest.TestCase):
             self.assertTrue((run_dir / "outputs" / "deployment_manifest.json").exists())
             self.assertTrue((run_dir / "reports" / "metrics.json").exists())
             self.assertTrue((run_dir / "reports" / "predictions.csv").exists())
+            self.assertTrue((run_dir / "reports" / "cross_validation.csv").exists())
+            self.assertTrue((run_dir / "reports" / "model_comparison.json").exists())
 
     def test_dashboard_embeds_deployment_model(self):
         with TemporaryDirectory() as temp_dir:
@@ -136,6 +141,9 @@ class RandomForestWorkflowTest(unittest.TestCase):
                     run_root=(root / "runs").as_posix(),
                     run_id="dashboard_test",
                     n_estimators=10,
+                    cv_splits=3,
+                    cv_repeats=1,
+                    generate_figures=False,
                 )
             )
             dashboard_path = export_html_dashboard(

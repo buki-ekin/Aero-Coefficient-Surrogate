@@ -7,10 +7,11 @@ import json
 import platform
 import subprocess
 import sys
-import tomllib
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from typing import Any
+
+import tomllib
 
 
 def sha256(path: str | Path) -> str:

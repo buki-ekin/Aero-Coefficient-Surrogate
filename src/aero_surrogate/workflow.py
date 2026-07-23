@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
+from time import perf_counter
 from typing import Any
 
 import pandas as pd
@@ -15,6 +16,7 @@ from aero_surrogate.metrics import (
     grouped_train_test_split,
     prediction_table,
 )
+from aero_surrogate.reporting import generate_scientific_figures
 from aero_surrogate.reproducibility import (
     environment_metadata,
     input_manifest,
@@ -23,6 +25,7 @@ from aero_surrogate.reproducibility import (
 )
 from aero_surrogate.sklearn_surrogate import RandomForestSurrogate
 from aero_surrogate.surrogate import save_model
+from aero_surrogate.validation import evaluate_model_systematics
 
 
 @dataclass(frozen=True)
@@ -36,6 +39,9 @@ class TrainingRunConfig:
     run_root: str = "runs"
     run_id: str | None = None
     deployment_model_path: str | None = None
+    cv_splits: int = 5
+    cv_repeats: int = 3
+    generate_figures: bool = True
 
 
 def make_run_id(random_seed: int) -> str:
@@ -44,6 +50,7 @@ def make_run_id(random_seed: int) -> str:
 
 
 def run_training_workflow(config: TrainingRunConfig) -> dict[str, Any]:
+    started = perf_counter()
     dataset_path = Path(config.dataset_path)
     run_id = config.run_id or make_run_id(config.random_seed)
     run_dir = Path(config.run_root) / run_id
@@ -60,8 +67,8 @@ def run_training_workflow(config: TrainingRunConfig) -> dict[str, Any]:
     )
 
     validation_model = _new_model(config).fit(train)
-    train_prediction = validation_model.predict(train)
-    test_prediction = validation_model.predict(test)
+    train_prediction = validation_model.predict(train, warn_outside_domain=False)
+    test_prediction = validation_model.predict(test, warn_outside_domain=False)
     train_metrics = evaluate_predictions(train, train_prediction)
     test_metrics = evaluate_predictions(test, test_prediction)
 
@@ -108,6 +115,31 @@ def run_training_workflow(config: TrainingRunConfig) -> dict[str, Any]:
     predictions_path = reports_dir / "predictions.csv"
     predictions.to_csv(predictions_path, index=False)
 
+    cross_validation, model_comparison = evaluate_model_systematics(
+        dataset,
+        n_splits=config.cv_splits,
+        n_repeats=config.cv_repeats,
+        random_seed=config.random_seed,
+        n_estimators=config.n_estimators,
+        min_samples_leaf=config.min_samples_leaf,
+    )
+    cross_validation_path = reports_dir / "cross_validation.csv"
+    cross_validation.to_csv(cross_validation_path, index=False)
+    model_comparison_path = write_json(
+        reports_dir / "model_comparison.json",
+        model_comparison,
+    )
+
+    figure_manifest_path: Path | None = None
+    if config.generate_figures:
+        generate_scientific_figures(
+            dataset_path=dataset_path,
+            predictions_path=predictions_path,
+            cross_validation_path=cross_validation_path,
+            output_dir=reports_dir / "figures",
+        )
+        figure_manifest_path = reports_dir / "figures" / "figure_manifest.json"
+
     deployment_manifest_path = write_json(
         outputs_dir / "deployment_manifest.json",
         {
@@ -137,13 +169,22 @@ def run_training_workflow(config: TrainingRunConfig) -> dict[str, Any]:
             "test_rmse": {
                 target: values["rmse"] for target, values in test_metrics.items()
             },
+            "repeated_grouped_validation": model_comparison,
             "deployment_training_rows": len(dataset),
+            "runtime_seconds": perf_counter() - started,
             "main_outputs": {
                 "validation_model": validation_model_path.as_posix(),
                 "deployment_model": deployment_model_path.as_posix(),
                 "deployment_manifest": deployment_manifest_path.as_posix(),
                 "metrics": metrics_path.as_posix(),
                 "predictions": predictions_path.as_posix(),
+                "cross_validation": cross_validation_path.as_posix(),
+                "model_comparison": model_comparison_path.as_posix(),
+                "figure_manifest": (
+                    figure_manifest_path.as_posix()
+                    if figure_manifest_path is not None
+                    else None
+                ),
             },
         },
     )
@@ -158,6 +199,9 @@ def run_training_workflow(config: TrainingRunConfig) -> dict[str, Any]:
         n_test=len(test),
         held_out_airfoils=held_out_airfoils,
         test_metrics=test_metrics,
+        cv_splits=config.cv_splits,
+        cv_repeats=config.cv_repeats,
+        runtime_seconds=perf_counter() - started,
     )
 
     return {
@@ -171,6 +215,9 @@ def run_training_workflow(config: TrainingRunConfig) -> dict[str, Any]:
         "deployment_manifest": deployment_manifest_path,
         "metrics": metrics_path,
         "predictions": predictions_path,
+        "cross_validation": cross_validation_path,
+        "model_comparison": model_comparison_path,
+        "figure_manifest": figure_manifest_path,
         "summary": summary_path,
         "log": log_path,
         "held_out_airfoils": held_out_airfoils,
@@ -210,6 +257,9 @@ def _write_run_log(
     n_test: int,
     held_out_airfoils: list[str],
     test_metrics: dict[str, dict[str, float]],
+    cv_splits: int,
+    cv_repeats: int,
+    runtime_seconds: float,
 ) -> None:
     lines = [
         f"run_id={run_id}",
@@ -219,6 +269,7 @@ def _write_run_log(
         f"train_rows={n_train}",
         f"test_rows={n_test}",
         f"held_out_airfoils={','.join(held_out_airfoils)}",
+        f"repeated_grouped_cv={cv_repeats}x{cv_splits}",
     ]
     for target in TARGET_COLUMNS:
         values = test_metrics[target]
@@ -227,4 +278,5 @@ def _write_run_log(
             f"mae={values['mae']:.8f} r2={values['r2']:.8f}"
         )
     lines.append("status=completed")
+    lines.append(f"runtime_seconds={runtime_seconds:.3f}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")

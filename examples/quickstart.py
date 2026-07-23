@@ -1,8 +1,8 @@
-"""Minimal example for querying the final flow5 Random Forest model."""
+"""Minimal clean-install example using the bundled deployment model."""
 
 from aero_surrogate import AeroSurrogate
 
-model = AeroSurrogate.load("models/flow5_random_forest.pkl")
+model = AeroSurrogate.load()
 prediction = model.predict_naca(
     naca="2412",
     alpha_deg=4.0,

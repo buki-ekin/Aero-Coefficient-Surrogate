@@ -9,8 +9,9 @@ from pathlib import Path
 import pandas as pd
 
 from aero_surrogate.api import AeroSurrogate
-from aero_surrogate.data import load_dataset, save_dataset
+from aero_surrogate.bundled import export_bundled_dashboard
 from aero_surrogate.dashboard import export_html_dashboard
+from aero_surrogate.data import load_dataset, save_dataset
 from aero_surrogate.flow5 import import_flow5_directory, read_flow5_polar
 from aero_surrogate.sklearn_surrogate import RandomForestSurrogate
 from aero_surrogate.surrogate import save_model
@@ -45,9 +46,20 @@ def main() -> None:
     run_parser.add_argument("--seed", type=int, default=42)
     run_parser.add_argument("--run-id", default=None)
     run_parser.add_argument("--deployment-model", default="models/flow5_random_forest.pkl")
+    run_parser.add_argument("--cv-splits", type=int, default=5)
+    run_parser.add_argument("--cv-repeats", type=int, default=3)
+    run_parser.add_argument(
+        "--no-figures",
+        action="store_true",
+        help="Skip scientific PNG report generation.",
+    )
 
     predict_parser = subparsers.add_parser("predict", help="Predict one airfoil state.")
-    predict_parser.add_argument("--model", default="models/flow5_random_forest.pkl")
+    predict_parser.add_argument(
+        "--model",
+        default=None,
+        help="Trusted pickle model path. Omit to use the bundled deployment model.",
+    )
     predict_parser.add_argument("--naca", help="NACA 4-digit preset, for example 2412.")
     predict_parser.add_argument("--camber", type=float)
     predict_parser.add_argument("--camber-position", type=float)
@@ -65,6 +77,15 @@ def main() -> None:
     summary_parser.add_argument("--data", default="data/processed/flow5_airfoils.csv")
     summary_parser.add_argument("--run-dir", required=True)
     summary_parser.add_argument("--model", default="models/flow5_random_forest.pkl")
+
+    bundled_dashboard_parser = subparsers.add_parser(
+        "export-bundled-dashboard",
+        help="Copy the self-contained dashboard from an installed package.",
+    )
+    bundled_dashboard_parser.add_argument(
+        "--output",
+        default="aerosurrogate_dashboard.html",
+    )
 
     args = parser.parse_args()
 
@@ -86,6 +107,9 @@ def main() -> None:
         print(f"Saved dashboard to {path}")
     elif args.command == "summary":
         _summary(args)
+    elif args.command == "export-bundled-dashboard":
+        path = export_bundled_dashboard(args.output)
+        print(f"Saved bundled dashboard to {path}")
 
 
 def _import_flow5(args: argparse.Namespace) -> None:
@@ -118,6 +142,9 @@ def _run(args: argparse.Namespace) -> None:
             run_root=args.run_root,
             run_id=args.run_id,
             deployment_model_path=args.deployment_model,
+            cv_splits=args.cv_splits,
+            cv_repeats=args.cv_repeats,
+            generate_figures=not args.no_figures,
         )
     )
     print(f"Saved final run to {result['run_dir']}")
@@ -179,6 +206,21 @@ def _summary(args: argparse.Namespace) -> None:
             f"{target.upper():>2}  RMSE={values['rmse']:.6f}  "
             f"MAE={values['mae']:.6f}  R2={values['r2']:.6f}"
         )
+    comparison_path = Path(args.run_dir) / "reports" / "model_comparison.json"
+    if comparison_path.exists():
+        with comparison_path.open(encoding="utf-8") as file:
+            comparison = json.load(file)
+        random_forest = comparison["models"]["random_forest"]
+        print(
+            "\nRepeated grouped validation "
+            f"({comparison['n_repeats']} x {comparison['n_splits']} folds)"
+        )
+        for target in ("cl", "cd", "cm"):
+            values = random_forest[target]
+            print(
+                f"{target.upper():>2}  mean RMSE={values['rmse_mean']:.6f}  "
+                f"95% CI half-width={values['rmse_ci95']:.6f}"
+            )
 
 
 if __name__ == "__main__":

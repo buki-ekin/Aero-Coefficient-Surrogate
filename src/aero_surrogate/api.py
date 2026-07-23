@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from importlib.resources import as_file, files
 from pathlib import Path
 from typing import Any
 
@@ -18,11 +19,28 @@ class AeroSurrogate:
     @classmethod
     def load(
         cls,
-        path: str | Path = "models/flow5_random_forest.pkl",
+        path: str | Path | None = None,
     ) -> "AeroSurrogate":
-        """Load the final trained surrogate from disk."""
+        """Load a trusted model file or the model bundled with the package.
 
-        return cls(load_model(path))
+        Pickle model files can execute code during loading. Only pass files from
+        a trusted source. When ``path`` is omitted, the checksum-controlled model
+        shipped with AeroSurrogate is used.
+        """
+
+        if path is not None:
+            return cls(load_model(path))
+
+        resource = files("aero_surrogate.resources").joinpath(
+            "flow5_random_forest.pkl"
+        )
+        if not resource.is_file():
+            raise FileNotFoundError(
+                "The bundled deployment model is unavailable. Reinstall the "
+                "package or pass an explicit trusted model path."
+            )
+        with as_file(resource) as model_path:
+            return cls(load_model(model_path))
 
     def predict_naca(
         self,
@@ -61,3 +79,27 @@ class AeroSurrogate:
             }
         ).iloc[0]
         return {name: float(value) for name, value in prediction.items()}
+
+    def domain_warnings(
+        self,
+        *,
+        camber: float,
+        camber_position: float,
+        thickness: float,
+        alpha_deg: float,
+        reynolds: float,
+    ) -> list[str]:
+        """Return training-domain violations for a proposed prediction."""
+
+        checker = getattr(self.model, "domain_violations", None)
+        if checker is None:
+            return []
+        return checker(
+            {
+                "camber": camber,
+                "camber_position": camber_position,
+                "thickness": thickness,
+                "alpha_deg": alpha_deg,
+                "reynolds": reynolds,
+            }
+        )
