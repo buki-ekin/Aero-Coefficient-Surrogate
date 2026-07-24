@@ -1,0 +1,38 @@
+{
+  "data_source": "flow5 polar exports",
+  "deployment_training_rows": 1618,
+  "features": [
+    "camber",
+    "camber_position",
+    "thickness",
+    "alpha_deg",
+    "reynolds"
+  ],
+  "held_out_airfoils": [
+    "NACA 0021",
+    "NACA 2418",
+    "NACA 2424",
+    "NACA 4415",
+    "NACA 4418"
+  ],
+  "main_outputs": {
+    "deployment_manifest": "runs/final_grouped_naca_seed42/outputs/deployment_manifest.json",
+    "deployment_model": "runs/final_grouped_naca_seed42/outputs/deployment_model.pkl",
+    "metrics": "runs/final_grouped_naca_seed42/reports/metrics.json",
+    "predictions": "runs/final_grouped_naca_seed42/reports/predictions.csv",
+    "validation_model": "runs/final_grouped_naca_seed42/outputs/validation_model.pkl"
+  },
+  "model": "RandomForestSurrogate",
+  "run_id": "final_grouped_naca_seed42",
+  "split_strategy": "grouped_by_naca",
+  "targets": [
+    "cl",
+    "cd",
+    "cm"
+  ],
+  "test_rmse": {
+    "cd": 0.0013188181104032632,
+    "cl": 0.0345731014576473,
+    "cm": 0.006959562753338832
+  }
+}
