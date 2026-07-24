@@ -5,6 +5,8 @@
 - Added a multi-stage, non-root Docker image for the bundled prediction
   package.
 - Added container build and prediction checks to GitHub Actions.
+- Added tag-triggered GitHub Container Registry publishing with SBOM and build
+  provenance.
 - Documented the container's reproducibility boundary and usage.
 - Prepared the official GitHub-to-Zenodo DOI release workflow.
 - Restored the declared Python 3.10 compatibility with a TOML parser fallback.

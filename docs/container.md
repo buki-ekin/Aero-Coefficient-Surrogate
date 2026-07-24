@@ -17,6 +17,18 @@ The multi-stage build creates all Python wheels in a builder image and installs
 them into the runtime image without contacting a package index. Only the
 installed package and its runtime dependencies remain in the final image.
 
+## Pull A Released Image
+
+Version tags publish the tested image to GitHub Container Registry with an SBOM
+and build-provenance attestation:
+
+```bash
+docker pull ghcr.io/buki-ekin/aerosurrogate:1.2.0
+```
+
+The registry artifact appears only after the corresponding `v1.2.0` Git tag has
+been pushed and the release workflow has completed.
+
 ## Predict
 
 ```bash
@@ -26,6 +38,9 @@ docker run --rm aerosurrogate:1.2.0 \
   --alpha-deg 4 \
   --reynolds 1000000
 ```
+
+Replace `aerosurrogate:1.2.0` with
+`ghcr.io/buki-ekin/aerosurrogate:1.2.0` to run the published image.
 
 Expected coefficient values, allowing for display rounding:
 
