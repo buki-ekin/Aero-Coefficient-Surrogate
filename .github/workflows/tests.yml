@@ -1,0 +1,46 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - run: ruff check src tests
+      - run: pytest --cov=aero_surrogate --cov-report=term-missing --cov-fail-under=75
+        env:
+          MPLCONFIGDIR: /tmp/aerosurrogate-matplotlib
+      - run: pdoc -o /tmp/aerosurrogate-api-docs aero_surrogate
+      - run: python -m build
+
+  clean-install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build
+      - run: python -m build --wheel
+      - run: python -m venv /tmp/aerosurrogate-clean
+      - run: /tmp/aerosurrogate-clean/bin/pip install dist/*.whl
+      - run: /tmp/aerosurrogate-clean/bin/aero-surrogate predict --naca 2412 --alpha-deg 4 --reynolds 1000000
+      - run: /tmp/aerosurrogate-clean/bin/aero-surrogate export-bundled-dashboard --output /tmp/aerosurrogate.html
+
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build --tag aerosurrogate:ci .
+      - run: docker run --rm aerosurrogate:ci predict --naca 2412 --alpha-deg 4 --reynolds 1000000
+      - run: docker run --rm aerosurrogate:ci export-bundled-dashboard --output /tmp/aerosurrogate.html
