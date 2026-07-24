@@ -7,6 +7,7 @@
 - Added container build and prediction checks to GitHub Actions.
 - Documented the container's reproducibility boundary and usage.
 - Prepared the official GitHub-to-Zenodo DOI release workflow.
+- Restored the declared Python 3.10 compatibility with a TOML parser fallback.
 
 ## 1.1.0 - 2026-07-23
 
