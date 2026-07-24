@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 - 2026-07-24
+
+- Added a multi-stage, non-root Docker image for the bundled prediction
+  package.
+- Added container build and prediction checks to GitHub Actions.
+- Documented the container's reproducibility boundary and usage.
+- Prepared the official GitHub-to-Zenodo DOI release workflow.
+
 ## 1.1.0 - 2026-07-23
 
 - Added three-times repeated five-fold grouped validation.

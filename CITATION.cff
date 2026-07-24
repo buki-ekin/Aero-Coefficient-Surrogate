@@ -1,8 +1,9 @@
 cff-version: 1.2.0
 message: "If you use AeroSurrogate, please cite this project."
 title: "AeroSurrogate: A Reproducible Airfoil Surrogate Modelling Workflow"
-version: 1.1.0
-date-released: 2026-07-23
+type: software
+version: 1.2.0
+date-released: 2026-07-24
 authors:
   - family-names: "Ekin"
     given-names: "Buket"

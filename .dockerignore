@@ -1,0 +1,27 @@
+.git
+.github
+.venv
+venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.ruff_cache
+.coverage
+htmlcov
+build
+dist
+*.egg-info
+tmp
+data
+docs
+examples
+models
+output
+runs
+scripts
+tests
+workflow
+SCE - Lecture Slides
+*.pptx
+*.pdf
+.DS_Store

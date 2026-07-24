@@ -35,9 +35,13 @@ GitHub remote. The local repository is the working copy. This provides two
 independent copies for the submitted material, but it is not a long-term
 research archive.
 
-For final publication, version 1.1.0 should be released on GitHub and archived
+For final publication, version 1.2.0 should be released on GitHub and archived
 in Zenodo. The resulting DOI must then be added to `CITATION.cff`,
 `codemeta.json`, and the README. No DOI is claimed before that deposit exists.
+
+The Python delivery stage also has a versioned Docker build definition. The
+container improves execution isolation but does not replace the raw-data
+archive, Git history, manifests, or Zenodo deposit.
 
 ## Access And Reuse
 

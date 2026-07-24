@@ -13,6 +13,7 @@
   repository
 - a wheel can be built and installed without the source tree
 - the wheel contains the model, example data, and dashboard
+- a non-root Docker image provides an isolated prediction environment
 - long-term archive access is not yet guaranteed
 
 ## Interoperable
@@ -34,6 +35,7 @@ interoperable than the other products.
 - defined model inputs, outputs, and limitations
 - automated tests and clean-install CI
 - exact final environment lock
+- multi-stage container build checked in continuous integration
 - raw and processed checksums
 - public API, CLI, example, and dashboard
 
@@ -53,7 +55,7 @@ Each final run records:
 
 ## Remaining FAIR Work
 
-1. Create a GitHub release for version 1.1.0.
+1. Create a GitHub release for version 1.2.0.
 2. Archive that release in Zenodo.
 3. Add the resulting DOI to the README, citation, and CodeMeta records.
 4. If practical, publish the final data as a separately citable dataset.

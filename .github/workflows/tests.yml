@@ -36,3 +36,11 @@ jobs:
       - run: /tmp/aerosurrogate-clean/bin/pip install dist/*.whl
       - run: /tmp/aerosurrogate-clean/bin/aero-surrogate predict --naca 2412 --alpha-deg 4 --reynolds 1000000
       - run: /tmp/aerosurrogate-clean/bin/aero-surrogate export-bundled-dashboard --output /tmp/aerosurrogate.html
+
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build --tag aerosurrogate:ci .
+      - run: docker run --rm aerosurrogate:ci predict --naca 2412 --alpha-deg 4 --reynolds 1000000
+      - run: docker run --rm aerosurrogate:ci export-bundled-dashboard --output /tmp/aerosurrogate.html

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aero-surrogate"
-version = "1.1.0"
+version = "1.2.0"
 description = "Random Forest surrogate modelling from flow5 airfoil polar data."
 readme = "README.md"
 requires-python = ">=3.10"
