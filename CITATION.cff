@@ -3,7 +3,7 @@ message: "If you use Aero Coefficient Surrogate, please cite this project."
 title: "Aero Coefficient Surrogate: A Reproducible Airfoil Surrogate Modelling Workflow"
 type: software
 version: 1.2.0
-date-released: 2026-07-24
+date-released: 2026-08-11
 authors:
   - family-names: "Ekin"
     given-names: "Buket"

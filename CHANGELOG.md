@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.0 - 2026-07-24
+## 1.2.0 - 2026-08-11
 
 - Added a multi-stage, non-root Docker image for the bundled prediction
   package.

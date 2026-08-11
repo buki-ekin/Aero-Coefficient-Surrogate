@@ -1,0 +1,16 @@
+{
+  "creators": [
+    {
+      "name": "Ekin, Buket"
+    }
+  ],
+  "keywords": [
+    "airfoil",
+    "flow5",
+    "random forest",
+    "reproducible research",
+    "surrogate modelling"
+  ],
+  "license": "MIT",
+  "title": "Aero Coefficient Surrogate: A Reproducible Airfoil Surrogate Modelling Workflow"
+}
