@@ -1,5 +1,7 @@
 # Aero Coefficient Surrogate
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21887660.svg)](https://doi.org/10.5281/zenodo.21887660)
+
 Aero Coefficient Surrogate is an installable research package that turns
 flow5 airfoil polar exports into a validated, reusable Random Forest surrogate.
 It predicts lift, drag, and pitching-moment coefficients for NACA 4-digit
@@ -230,8 +232,8 @@ the bundled dashboard.
 - CSV, JSON, TXT, XML, DAT, HTML, and PNG are used for portable exchange
 - model pickle files must only be loaded from trusted sources
 
-The repository does not yet have a DOI or independent archival deposit. A
-Zenodo archive is recommended for the final public release.
+The final submission is independently archived by Zenodo under
+[DOI 10.5281/zenodo.21887660](https://doi.org/10.5281/zenodo.21887660).
 
 See:
 

@@ -5,7 +5,8 @@
 - repository has a stable public URL
 - package, run, data, and model names are consistent
 - `CITATION.cff` and `codemeta.json` describe the software
-- no DOI has been minted yet
+- the final submission is archived under DOI
+  [10.5281/zenodo.21887660](https://doi.org/10.5281/zenodo.21887660)
 
 ## Accessible
 
@@ -14,7 +15,7 @@
 - a wheel can be built and installed without the source tree
 - the wheel contains the model, example data, and dashboard
 - a non-root Docker image provides an isolated prediction environment
-- long-term archive access is not yet guaranteed
+- Zenodo provides an independent archival copy of the final submission
 
 ## Interoperable
 
@@ -53,10 +54,9 @@ Each final run records:
 - validation and deployment model checksums
 - runtime and plain-text log
 
-## Remaining FAIR Work
+## FAIR Publication Status
 
-1. Create a GitHub release for version 1.2.0.
-2. Archive that release in Zenodo.
-3. Add the resulting DOI to the README, citation, and CodeMeta records.
-4. If practical, publish the final data as a separately citable dataset.
-5. Consider a non-pickle portable model representation.
+The GitHub release, Zenodo archive, DOI, README citation, `CITATION.cff`, and
+CodeMeta record are complete. Future improvements could publish the final data
+as a separately citable dataset and provide a non-pickle portable model
+representation.

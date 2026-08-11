@@ -5,6 +5,7 @@
   "version": "1.2.0",
   "description": "A reproducible flow5-to-Random-Forest airfoil surrogate modelling workflow.",
   "codeRepository": "https://github.com/buki-ekin/Aero-Coefficient-Surrogate",
+  "identifier": "https://doi.org/10.5281/zenodo.21887660",
   "license": "https://spdx.org/licenses/MIT",
   "programmingLanguage": "Python",
   "runtimePlatform": "Python >= 3.10",

@@ -31,13 +31,10 @@ physically implausible model rows before training.
 ## Backup And Archive
 
 Tracked code, data, documentation, and final artifacts are copied to the public
-GitHub remote. The local repository is the working copy. This provides two
-independent copies for the submitted material, but it is not a long-term
-research archive.
-
-For final publication, version 1.2.0 should be released on GitHub and archived
-in Zenodo. The resulting DOI must then be added to `CITATION.cff`,
-`codemeta.json`, and the README. No DOI is claimed before that deposit exists.
+GitHub remote. The final submission is also preserved independently by Zenodo
+under DOI
+[10.5281/zenodo.21887660](https://doi.org/10.5281/zenodo.21887660).
+The local repository remains the working copy.
 
 The Python delivery stage also has a versioned Docker build definition. The
 container improves execution isolation but does not replace the raw-data
