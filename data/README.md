@@ -57,7 +57,7 @@ runs/final_grouped_cv_naca_seed42/reports/figures/data_coverage.png
 
 ## Integrity Checks
 
-Before data can be saved or used for training, AeroSurrogate checks:
+Before data can be saved or used for training, Aero Coefficient Surrogate checks:
 
 - required columns
 - finite numeric values

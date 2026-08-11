@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use AeroSurrogate, please cite this project."
-title: "AeroSurrogate: A Reproducible Airfoil Surrogate Modelling Workflow"
+message: "If you use Aero Coefficient Surrogate, please cite this project."
+title: "Aero Coefficient Surrogate: A Reproducible Airfoil Surrogate Modelling Workflow"
 type: software
 version: 1.2.0
 date-released: 2026-07-24
@@ -8,9 +8,9 @@ authors:
   - family-names: "Ekin"
     given-names: "Buket"
 license: MIT
-abstract: "AeroSurrogate is a small sustainable computational engineering project for reproducible surrogate modelling of NACA-style airfoil coefficients."
-repository-code: "https://github.com/buki-ekin/SCE-PROJECT"
-url: "https://github.com/buki-ekin/SCE-PROJECT"
+abstract: "Aero Coefficient Surrogate is a sustainable computational engineering project for reproducible surrogate modelling of NACA-style airfoil coefficients."
+repository-code: "https://github.com/buki-ekin/Aero-Coefficient-Surrogate"
+url: "https://github.com/buki-ekin/Aero-Coefficient-Surrogate"
 keywords:
   - surrogate modelling
   - airfoil

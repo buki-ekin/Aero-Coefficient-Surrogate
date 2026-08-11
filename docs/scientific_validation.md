@@ -2,7 +2,7 @@
 
 ## Claim Being Tested
 
-AeroSurrogate is intended to reproduce flow5 aerodynamic coefficients for NACA
+Aero Coefficient Surrogate is intended to reproduce flow5 aerodynamic coefficients for NACA
 4-digit geometries inside the sampled design and operating-condition domain.
 It is not intended to establish aerodynamic truth.
 

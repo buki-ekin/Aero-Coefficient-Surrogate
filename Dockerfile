@@ -13,9 +13,9 @@ RUN python -m pip wheel --wheel-dir /wheels .
 
 FROM python:3.12-slim-bookworm
 
-LABEL org.opencontainers.image.title="AeroSurrogate" \
+LABEL org.opencontainers.image.title="Aero Coefficient Surrogate" \
       org.opencontainers.image.description="Reproducible flow5 airfoil surrogate prediction package" \
-      org.opencontainers.image.source="https://github.com/buki-ekin/SCE-PROJECT" \
+      org.opencontainers.image.source="https://github.com/buki-ekin/Aero-Coefficient-Surrogate" \
       org.opencontainers.image.version="1.2.0" \
       org.opencontainers.image.licenses="MIT"
 

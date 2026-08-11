@@ -1,13 +1,13 @@
-# AeroSurrogate
+# Aero Coefficient Surrogate
 
-AeroSurrogate is an installable research package that turns flow5 airfoil
-polar exports into a validated, reusable Random Forest surrogate. It predicts
-lift, drag, and pitching-moment coefficients for NACA 4-digit geometries while
-recording the data, software, and model provenance needed to reproduce the
-result.
+Aero Coefficient Surrogate is an installable research package that turns
+flow5 airfoil polar exports into a validated, reusable Random Forest surrogate.
+It predicts lift, drag, and pitching-moment coefficients for NACA 4-digit
+geometries while recording the data, software, and model provenance needed to
+reproduce the result.
 
-> **Scientific boundary:** AeroSurrogate approximates flow5 v7.57 outputs. It
-> is not validated against wind-tunnel measurements or high-fidelity CFD and
+> **Scientific boundary:** Aero Coefficient Surrogate approximates flow5 v7.57 outputs. It
+> is not validated against wind tunnel measurements or high fidelity CFD and
 > must not be treated as an extrapolating physical model.
 
 ## Research Question
@@ -77,7 +77,7 @@ to:
 - `CM`: pitching-moment coefficient
 
 Random Forest was selected because the relationship is nonlinear and
-multi-output. Repeated grouped validation now compares that choice against a
+multi output. Repeated grouped validation now compares that choice against a
 mean predictor and linear regression rather than relying on an unsupported
 model preference.
 

@@ -12,8 +12,7 @@ build/
 dist/
 *.egg-info/
 tmp/
-SCE - Lecture Slides /
 output/pdf/
-SCE-Presentation.pptx
-scripts/create_l01_l03_whiteboard_pdf.py
-scripts/create_l05_l11_whiteboard_pdfs.py
+*.pdf
+*.pptx
+scripts/create_*_whiteboard*.py

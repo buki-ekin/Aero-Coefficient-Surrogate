@@ -23,7 +23,7 @@ jobs:
       - id: metadata
         uses: docker/metadata-action@v6
         with:
-          images: ghcr.io/buki-ekin/aerosurrogate
+          images: ghcr.io/buki-ekin/aero-coefficient-surrogate
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}

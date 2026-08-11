@@ -60,5 +60,5 @@ archival deposit.
 
 The project author is responsible for data integrity, versioning, release
 creation, and responding to reuse questions. flow5 remains responsible for the
-reference aerodynamic calculation; AeroSurrogate records rather than hides
+reference aerodynamic calculation; Aero Coefficient Surrogate records rather than hides
 that dependency.

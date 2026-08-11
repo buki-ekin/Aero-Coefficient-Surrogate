@@ -1,7 +1,7 @@
 # Container Guide
 
 The Docker image provides an isolated, non-root Python environment containing
-the AeroSurrogate package, deployment model, example dataset, and
+the Aero Coefficient Surrogate package, deployment model, example dataset, and
 self-contained dashboard.
 
 The container covers the reproducible Python prediction and delivery stage. It
@@ -23,7 +23,7 @@ Version tags publish the tested image to GitHub Container Registry with an SBOM
 and build-provenance attestation:
 
 ```bash
-docker pull ghcr.io/buki-ekin/aerosurrogate:1.2.0
+docker pull ghcr.io/buki-ekin/aero-coefficient-surrogate:1.2.0
 ```
 
 The registry artifact appears only after the corresponding `v1.2.0` Git tag has
@@ -40,7 +40,7 @@ docker run --rm aerosurrogate:1.2.0 \
 ```
 
 Replace `aerosurrogate:1.2.0` with
-`ghcr.io/buki-ekin/aerosurrogate:1.2.0` to run the published image.
+`ghcr.io/buki-ekin/aero-coefficient-surrogate:1.2.0` to run the published image.
 
 Expected coefficient values, allowing for display rounding:
 

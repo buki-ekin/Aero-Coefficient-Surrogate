@@ -8,7 +8,6 @@
 - Added tag-triggered GitHub Container Registry publishing with SBOM and build
   provenance.
 - Documented the container's reproducibility boundary and usage.
-- Prepared the official GitHub-to-Zenodo DOI release workflow.
 - Restored the declared Python 3.10 compatibility with a TOML parser fallback.
 
 ## 1.1.0 - 2026-07-23
